@@ -1,0 +1,14 @@
+# CAD Best Practices
+
+____________
+
+Becoming an expert in part design takes time. Here's some good practices that engineers at Cerillo have picked up along the way.
+
+```{eval-rst}
+.. toctree::
+   :caption: CAD Techniques and Best Practices
+   :glob:
+   :maxdepth: 1
+
+   CADTech/**
+```

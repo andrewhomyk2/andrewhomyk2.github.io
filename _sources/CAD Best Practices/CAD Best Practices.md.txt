@@ -1,0 +1,4 @@
+# CAD Best Practices
+
+1. Install your CAD
+2. Do good

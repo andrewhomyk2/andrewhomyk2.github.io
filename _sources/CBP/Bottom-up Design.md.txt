@@ -1,0 +1,19 @@
+# Bottom-Up Design
+
+There are different design philosophies you can use while designing parts and assemblies. One of the most commonly used design philosophies is the concept of Bottom-Up design. The verbiage here is a little misleading, but the general philosophy is that it is good practice to design components independently and then bring those independent instances into a common assembly. Here's a short video clip explaining the approach using Fusion 360.
+
+<iframe width="700" height="441" src="https://www.youtube.com/embed/f1Nx0kd-cJE?start=154" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Designing In-Context (Top-Down)
+
+The second half of this video clip talks about top-down design, where the designer creates components in the context of an assembly. This approach is the fastest way to design parts that fit into your assembly. 
+
+**However**
+
+It has some serious drawbacks in real life. Most notably, **you can accidentally change parts without realizing it**. 
+
+In the example above (~4:15 timestamp) the designer uses the shaft of the main assembly as a reference to create an extrusion for the protractor component. The diameter of the shaft in the assembly defines the diameter of the central hole in the new component they are designing. The danger here lies in the future. Imagine an engineer in the future is working on this assembly. For reasons, they need to decrease the diameter of the shaft we just talked about. When they modify the diameter of the shaft, the in-context component hole will change with it. The new designer may or may not realize this.
+
+If the designer doesn't realize the protractor part changed there's a risk they may miss that when they're ordering parts, afterall they only changed the shaft, and the solid model looks good. If they have protractors in stock, they won't fit the new shafts, and there-in lies the rub. In-context modeling is excellent while working in abstraction on a computer, but it doesn't work out so well when you've got specific revisions of parts stocked in inventory that have to fit together.
+
+Moral of the story here, is that when we design components that fit into Alpha, Beta and Production level assemblies, we should be designing them using the Bottom-Up Design philosophy. Design each part separately. Dimension diameters and component mating features out of context, and then bring the parts together into a final assembly. There are some minor exceptions here, like designing plastic housings. However, the key point to take away is to remember the engineers who will be looking at your design in the future. They won't know what all of your reference structures are, be kind to them.
